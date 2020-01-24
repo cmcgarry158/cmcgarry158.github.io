@@ -1,0 +1,120 @@
+.align-left {
+	float: left;
+}
+
+.align-right {
+	float: right;
+}
+
+.thumbnail {
+	height: 75px;
+	width: 75px;
+}
+
+.msBadge {
+	height: 125px;
+	width: 125px;
+}
+
+.thumbnail,
+.msBadge {
+	margin-right: 15px;
+}
+
+.date {
+	padding-right: 15px
+}
+
+.all-content {
+	position: relative;
+	min-height: 100vh;
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;	
+}
+
+.skills.flex-container {
+	flex-direction: column;
+}
+
+.header {
+	background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(225,225,225,1) 100%);
+	text-align: center;
+	padding: 15px;
+}
+
+.side {
+	flex: 25%;
+	padding: 15px;
+	padding-left: 50px;	
+}
+
+.main {
+	flex: 75%;
+	padding: 15px;
+	padding-right: 50px;
+}
+
+.footer {
+	background: linear-gradient(0deg, rgba(225,225,225,1) 0%, rgba(255,255,255,1) 100%);
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.contact {
+	text-align: center;
+	padding: 10px;
+	flex: 25%;
+}
+
+@media screen and (max-width: 1140px) {
+	.flex-container { 
+		flex-direction: column; 
+	}
+
+	.skills-left {
+		padding-right: 15px;
+	}
+	
+	.skills-left,
+	.skills-right {
+		flex: 50%;
+	}
+	
+	.footer.flex-container,
+	.skills.flex-container {
+		flex-direction: row;
+	}
+	
+	.side {
+		padding-right: 50px;
+		padding-bottom: 15px;
+		align-content: flex-start;
+	}
+	
+	.main {
+		padding-left: 50px;
+		padding-bottom: 15px;
+	}
+	
+	.footer {
+		background: linear-gradient(0deg, rgba(225,225,225,1) 0%, rgba(255,255,255,1) 100%);
+		padding: 15px;
+		position: relative;
+	}	
+}
+
+@media screen and (max-width: 850px) {
+	.footer.flex-container {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.skills.flex-container {
+		flex-direction: column;
+	}
+}
