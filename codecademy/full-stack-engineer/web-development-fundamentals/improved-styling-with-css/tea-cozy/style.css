@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2, h3, h4 {
+  margin: 10px 0;
+}
+
+body {
+  background-color: black;
+  color: seashell;
+  font-family: Helvetica;
+  font-size: 22px;
+  opacity: 0.9;
+  text-align: center;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  height: 69px;
+  width: 100%;
+  border: 1px solid seashell;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 0 10px;
+}
+
+#logo {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+a {
+  color: seashell;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#mission {
+  margin-top: 69px;
+  height: 700px;
+  background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission-content {
+  background-color: black;
+  width: 100%;
+  padding: 20px;
+}
+
+#featured_tea {
+  padding: 40px 20px;
+  margin: 0 auto;
+}
+
+#teas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+figure {
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+}
+
+img.tea {
+  height: 200px;
+  width: 100%;
+}
+
+#locations {
+  height: 500px;
+  background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#addresses {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.address {
+  background-color: black;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.address h3,
+.address h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+main,
+footer {
+  margin: 20px 20px;
+}
+
+footer {
+  text-align: left;
+}
