@@ -19,7 +19,7 @@ h1 {
 
 h5 {
     text-transform: uppercase;
-    text-decoration: bold;
+    font-weight: bold;
 }
 
 .projects {
