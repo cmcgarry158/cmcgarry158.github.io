@@ -6,7 +6,7 @@ const container = document.getElementById('app');
 const root = createRoot(container);
 
 const showBackground = true;
-const background = showBackground && <img className="background" src="./src/images/ocean.jpg" alt="ocean" />;
+const background = showBackground && <img className="background" src="./images/ocean.jpg" alt="ocean" />;
 const title = '';
 
 const images = [];
