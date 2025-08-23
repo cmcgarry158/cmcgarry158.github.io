@@ -5,7 +5,7 @@ function Project({project}) {
     const ref = <li><a href={project.refUrl} target="_blank">Reference</a></li>;
 
     function getDesc() {
-        let desc = project.desc;
+        let desc = `"${project.desc}"`;
         desc = desc.split(/(?<!(?:\bvs\.))(?<=[.?!])\s+/g);
 
         if(project.designSpecUrl) {
@@ -14,9 +14,9 @@ function Project({project}) {
                     const parts = sentence.split(/design spec/);
                     return (
                         <>
-                            {parts[0]}
+                            <p>{parts[0]}
                             <a href={project.designSpecUrl} target="_blank" >design spec</a>
-                            {parts[1]}
+                            {parts[1]}</p>
                         </>
                     )
                 }
