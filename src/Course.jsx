@@ -3,7 +3,7 @@ import SubCourse from './SubCourse'
 
 function Course({course}) {
   function getId(courseTitle) {
-    return courseTitle.toLowerCase().replace(' ', '-');
+    return courseTitle.toLowerCase().replaceAll(' ', '-');
   }
 
   return (
