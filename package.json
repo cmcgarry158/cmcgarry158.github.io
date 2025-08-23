@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "vite-project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "clean": "rmdir /S /Q assets",
+    "clean": "rmdir /Q /S assets",
     "deploy": "npm run build && cd dist && rename index.dev.html index.html && xcopy . .. /E /Y /I"
   },
   "dependencies": {
