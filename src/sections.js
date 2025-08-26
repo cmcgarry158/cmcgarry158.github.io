@@ -141,6 +141,12 @@ export const sections = [
                         liveDemoUrl:"https://cmcgarry158.github.io/projects/number-guesser",
                         objectivesUrl:"https://www.codecademy.com/projects/practice/number-guesser-independent-practice",
                         refUrl:"https://content.codecademy.com/PRO/independent-practice-projects/number-guesser/example/index.html"
+                    },
+                    {
+                        projectTitle:"WorkAround Explorer",
+                        desc:"In this project, practice building a modular program in JavaScript! Why? Modules can keep your code clean and organized. They also enable programmers to share functionality without \"reinventing the wheel\".",
+                        liveDemoUrl:"https://cmcgarry158.github.io/projects/workaround-explorer",
+                        objectivesUrl:"https://www.codecademy.com/projects/practice/es6-modules-workaround"
                     }
                 ]
             }
