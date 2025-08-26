@@ -30,17 +30,26 @@ function Project({project}) {
         return desc;
     }
 
+    function getSourceCodeUrl(liveDemoUrl) {
+        const projectsLocationIndex = liveDemoUrl.indexOf('projects');
+        const projectLocation = liveDemoUrl.substring(projectsLocationIndex);
+        return `https://www.github.com/cmcgarry158/cmcgarry158.github.io/tree/master/${projectLocation}`;
+    }
+
     return (
         <div className="project">
             <h5>{project.projectTitle}</h5>
             <ul>
+                <li>
+                    <a href={getSourceCodeUrl(project.liveDemoUrl)} target="_blank">Source Code</a>
+                </li>
                 <li>
                     <a href={project.liveDemoUrl} target="_blank">Live Demo</a>
                 </li>
                 <li>
                     <a href={project.objectivesUrl} target="_blank">Objectives</a>
                 </li>
-                {project.refUrl && ref}   
+                {project.refUrl && ref}
             </ul>
             <div className="project-desc">{getDesc()}</div>
         </div>

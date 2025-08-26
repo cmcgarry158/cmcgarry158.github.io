@@ -6,12 +6,14 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "test": "mocha",
     "preview": "vite preview",
     "clean": "rmdir /Q /S assets",
     "deploy": "npm run build && cd dist && rename index.dev.html index.html && xcopy . .. /E /Y /I"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^5.0.1",
+    "mocha": "^11.7.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "vite": "^7.1.3"
