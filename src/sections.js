@@ -169,6 +169,12 @@ export const sections = [
                         desc:"In this project, practice using props as well as defining, rendering, and referencing components.",
                         liveDemoUrl:"https://cmcgarry158.github.io/projects/codeyoverflow-forum",
                         objectivesUrl:"https://www.codecademy.com/projects/practice/codey-overflow-forum"
+                    },
+                    {
+                        projectTitle:"Rock, Paper, Scissors",
+                        desc:"In this project, practice styling React applications using three different techniques!",
+                        liveDemoUrl:"https://cmcgarry158.github.io/projects/rock-paper-scissors",
+                        objectivesUrl:"https://www.codecademy.com/projects/practice/styling-rock-paper-scissors"
                     }
                 ]
             }
