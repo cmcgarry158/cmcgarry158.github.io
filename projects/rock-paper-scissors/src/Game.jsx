@@ -34,21 +34,25 @@ function Game() {
   const [playerChoice, setPlayerChoice] = useState(null);
   const [codeyChoice, setCodeyChoice] = useState(null);
   const [result, setResult] = useState(null);
+  const [playerScore, setPlayerScore] = useState(0);
+  const [codeyScore, setCodeyScore] = useState(0);
 
   function handlePlayerChoice(choice) {
     const codeyChoice = CHOICES[Math.floor(Math.random() * CHOICES.length)];
     setPlayerChoice(choice);
     setCodeyChoice(codeyChoice);
     if (choice.name === codeyChoice.name) {
-      setResult("Tie!");
+      setResult("Tie.");
     } else if (
       (choice.name === "rock" && codeyChoice.name === "scissors") ||
       (choice.name === "paper" && codeyChoice.name === "rock") ||
       (choice.name === "scissors" && codeyChoice.name === "paper")
     ) {
-      setResult("You win!");
+      setPlayerScore((prev) => prev + 1);
+      setResult(`You win!`);
     } else {
-      setResult("You lose!");
+      setResult("You lose...");
+      setCodeyScore((prev) => prev + 1);
     }
   }
 
@@ -56,6 +60,8 @@ function Game() {
     setPlayerChoice(null);
     setCodeyChoice(null);
     setResult(null);
+    setPlayerScore(0);
+    setCodeyScore(0);
   }
 
   return (
@@ -80,9 +86,15 @@ function Game() {
           </div>
           <div style={choiceStyles}>
             <span style={emojiStyles}>{codeyChoice.emoji}</span>
-            <p style={nameStyles}>The computer chose {codeyChoice.name}</p>
+            <p style={nameStyles}>Computer chose {codeyChoice.name}</p>
           </div>
           <h2 style={resultStyles}>{result}</h2>
+          <table className={styles.scores}>
+            <tbody>
+              <tr><td>You</td><td>{playerScore}</td></tr>
+              <tr><td>Computer</td><td>{codeyScore}</td></tr>
+            </tbody>
+          </table>
           <button className={styles.button} onClick={resetGame}>Reset</button>
         </div>
       )}

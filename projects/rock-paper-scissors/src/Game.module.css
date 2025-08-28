@@ -10,8 +10,10 @@
 
 .choices {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin: 40px 0;
+  row-gap: 40px;
 }
 
 .button {
@@ -31,4 +33,10 @@
   flex-direction: column;
   align-items: center;
   margin-top: 40px;
+}
+
+.scores {
+  font-Size: 36px;
+  border-spacing: 1em 0;
+  margin-bottom: 40px;
 }
