@@ -175,6 +175,12 @@ export const sections = [
                         desc:"In this project, practice styling React applications using three different techniques!",
                         liveDemoUrl:"https://cmcgarry158.github.io/projects/rock-paper-scissors",
                         objectivesUrl:"https://www.codecademy.com/projects/practice/styling-rock-paper-scissors"
+                    },
+                    {
+                        projectTitle:"React Router",
+                        desc:"In this project, implement routing in a React application with React Router, a popular front-end routing solution.",
+                        liveDemoUrl:"https://cmcgarry158.github.io/projects/react-router",
+                        objectivesUrl:"https://www.codecademy.com/journeys/full-stack-engineer/paths/fscj-22-front-end-development/tracks/fscj-22-react-part-ii/modules/wdcp-22-react-router-60d12e07-e364-45e4-9102-8d919d464f5e/lessons/intermediate-react-router-v6/exercises/2022-audit-what-is-routing"
                     }
                 ]
             }
