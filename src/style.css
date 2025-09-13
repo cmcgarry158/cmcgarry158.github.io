@@ -55,7 +55,8 @@ h5 {
 }
 
 header p,
-.project-desc p {
+.project-desc p,
+#no-live-demo {
     font-style: italic;
 }
 

@@ -3,6 +3,7 @@ import React from 'react';
 function Project({project}) {
 
     const ref = <li><a href={project.refUrl} target="_blank">Reference</a></li>;
+    const liveDemo = <li><a href={project.liveDemoUrl} target="_blank">Live Demo</a></li>;
 
     function getDesc() {
         let desc = `"${project.desc}"`;
@@ -41,11 +42,9 @@ function Project({project}) {
             <h5>{project.projectTitle}</h5>
             <ul>
                 <li>
-                    <a href={getSourceCodeUrl(project.liveDemoUrl)} target="_blank">Source Code</a>
+                    <a href={project.sourceCodeUrl ?? getSourceCodeUrl(project.liveDemoUrl)} target="_blank">Source Code</a>
                 </li>
-                <li>
-                    <a href={project.liveDemoUrl} target="_blank">Live Demo</a>
-                </li>
+                {project.liveDemoUrl && liveDemo}
                 <li>
                     <a href={project.objectivesUrl} target="_blank">Objectives</a>
                 </li>

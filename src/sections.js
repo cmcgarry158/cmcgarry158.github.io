@@ -191,5 +191,21 @@ export const sections = [
                 ]
             }
         ]
+    },
+    {
+        courseTitle:"Full Stack Development",
+        subCourses: [
+            {
+                subCourseTitle:"Connecting Front-End to Back-End",
+                projects: [
+                    {
+                        projectTitle:"RESTful Restaurants",
+                        desc:"Build REST API endpoints using Express and implement communication between the front-end and back-end of a website.",
+                        sourceCodeUrl:"https://www.github.com/cmcgarry158/cmcgarry158.github.io/tree/master/projects/restful-restaurants",
+                        objectivesUrl:"https://www.codecademy.com/projects/practice/connecting-front-end-to-back-end-restful-restaurants"
+                    }
+                ]
+            }
+        ]
     }
 ];
